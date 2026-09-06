@@ -11,7 +11,7 @@ exports.sendOtp = async (req,res,next)=>{
         const otpKey = generateOtpKey(email);
 
         // Store the OTP in Redis with a 5-minute expiration
-        await redisClient.set(otpKey, otp, 'EX', 300); // 300 seconds = 5 minutes
+        await redisClient.set(otpKey, otp, { EX: 300 }); // 300 seconds = 5 minutes
 
         // send opt by a mail
         const mailOptions = {
