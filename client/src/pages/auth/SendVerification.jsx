@@ -22,7 +22,7 @@ const SendVerification = () => {
 
     try {
         const res = await fetch(
-            "https://interview-report-01.onrender.com/api/auth/send-otp",
+            "https://new-interview-report-1-bac.onrender.com/api/auth/send-otp",
             {
                 method: "POST",
                 headers: {
@@ -52,7 +52,7 @@ const SendVerification = () => {
 
         try {
             const res = await fetch(
-                "https://interview-report-01.onrender.com/api/auth/verify-otp",
+                "https://new-interview-report-1-bac.onrender.com/api/auth/verify-otp",
                 {
                     method: "POST",
                     headers: {
