@@ -20,7 +20,7 @@ const InterviewReportHome = () => {
         formData.append("jobDescription", jobDescriptionRef.current.value);
         formData.append("resume", resumeRef.current.files[0]);
         try {
-            const res = await fetch("http://localhost:3000/api/ai/generate-interview-report", {
+            const res = await fetch("https://new-interview-report-1-bac.onrender.com/api/ai/generate-interview-report", {
                 method: "POST",
                 body: formData
             });
